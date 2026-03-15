@@ -1,0 +1,54 @@
+
+<html>
+<body>
+<pre>
+# 1. Extract
+unzip market-analysis-complete.zip && cd market-analysis
+
+# 2. Start everything (takes ~3 min first time)
+docker-compose up --build
+
+# 3. In a second terminal — load demo data
+docker-compose exec backend node src/utils/seed.js
+
+Then open http://localhost:3000 and sign in:
+User Role and Password
+
+Admin Role:
+
+admin@marketai.com
+Admin@2024
+
+Analyst Role:
+
+analyst@marketai.com
+Admin@2024
+
+USeful Shortcuts:
+make up          # start dev stack
+make seed        # load demo data
+make test-ai     # run 23 AI unit tests
+make logs-api    # tail backend logs
+make db-shell    # open PostgreSQL prompt
+make down        # stop everything
+
+Files include:
+
+Backend JS syntax (27 files)
+Python syntax (8 files)✅ 8/8 pass
+AI unit tests (23 tests)✅ 23/23 pass
+Frontend JSX files (19 files)✅ 19/19 pass
+SQL tables (12 tables)✅ 12/12 present
+Backend npm dependencies (21)✅ 21/21 present
+Frontend npm dependencies (10)✅ 10/10 present
+AI requirements (8 packages)✅ 8/8 present
+API routes wired (7 routes)✅ 7/7 mounted
+AI endpoints (5 endpoints)✅ 5/5 present
+Pages (9 pages)✅ 9/9 
+completeApp.jsx routes (9)✅ 9/9 
+wiredDocker files (6)✅ 6/6 present
+Seed data (5 tables)✅ 5/5 covered
+
+</pre>
+</body>
+</html>

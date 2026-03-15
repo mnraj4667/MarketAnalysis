@@ -1,0 +1,7 @@
+unzip market-analysis-final.zip
+cd market-analysis
+docker-compose up --build
+
+# In a second terminal, seed demo data:
+docker-compose exec backend node src/utils/seed.js
+Then open http://localhost:3000 and log in with admin@marketai.com / Admin@2024.
